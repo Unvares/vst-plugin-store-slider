@@ -1,0 +1,49 @@
+.slider {
+    display: inline-flex;
+    user-select: none;
+    height: 100vh;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.slider__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vw;
+}
+.slider__header {
+    margin-top: 50px;
+}
+.slider__price {
+    margin-bottom: 50px;
+}
+.slider__image {
+    max-height: 60vh;
+    cursor: grab;
+
+    box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.5);
+}
+.slider__button {
+    position: relative;
+    margin-top: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;;
+}
+.slider__button:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s linear;
+}
+.slider__button:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.2s linear;
+}

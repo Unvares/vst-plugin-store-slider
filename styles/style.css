@@ -6,12 +6,12 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     font-size: 16px;
 }
 
 body {
     background-color: #333;
     color: #fff;
-
+    overflow: hidden;
 }
