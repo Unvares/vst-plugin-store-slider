@@ -16,6 +16,12 @@ body {
     overflow: hidden;
 }
 
+/*  Is used to disable horizontal scroll-bar on mobile
+    explanation: https://stackoverflow.com/questions/14270084/overflow-xhidden-doesnt-prevent-content-from-overflowing-in-mobile-browsers
+*/
+.wrapper {
+    overflow: hidden;
+}
 .oldprice {
     position: relative;
 }
