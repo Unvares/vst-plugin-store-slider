@@ -3,30 +3,32 @@
     user-select: none;
     height: 100vh;
     transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-out;
 }
 .slider__element {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
 .slider__header {
     margin-top: 50px;
 }
 .slider__price {
-    margin-bottom: 50px;
+    margin-top: 10px;
 }
 .slider__image {
-    max-height: 60vh;
+    margin: 50px 0;
+    max-width: 70vw;
+    max-height: 40vh;
     cursor: grab;
-
     box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
 }
 .slider__button {
     position: relative;
-    margin-top: 50px;
     cursor: pointer;
     text-decoration: none;
     color: #fff;;

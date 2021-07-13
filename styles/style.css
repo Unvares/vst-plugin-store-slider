@@ -15,3 +15,27 @@ body {
     color: #fff;
     overflow: hidden;
 }
+
+.oldprice {
+    position: relative;
+}
+.oldprice:before {
+    position: absolute;
+    content: '';
+    left: -3px;
+    bottom: 10px;
+    width: 55px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-13deg);
+}
+.oldprice:after {
+    position: absolute;
+    content: '';
+    left: -3px;
+    bottom: 10px;
+    width: 55px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(13deg);
+}

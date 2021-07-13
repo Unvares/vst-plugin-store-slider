@@ -1,3 +1,4 @@
-.grabbing {
+.grabbing img {
     cursor: grabbing;
+    transform: scale(0.9);
 }
